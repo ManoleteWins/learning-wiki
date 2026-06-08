@@ -1168,10 +1168,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spr-stack-to-pot-ratio" class="md-nav__link">
+  <a href="#spr-stack-to-pot-ratio-commitment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SPR (stack-to-pot ratio)
+        SPR (stack-to-pot ratio) &amp; commitment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploitability-nash-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploitability &amp; Nash distance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rake
       
     </span>
   </a>
@@ -1258,6 +1280,62 @@
     
   
     C-Betting & Lines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-preflop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preflop & Blind Defense
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-multiway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiway & Stack Depth
   
 
     
@@ -1387,10 +1465,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spr-stack-to-pot-ratio" class="md-nav__link">
+  <a href="#spr-stack-to-pot-ratio-commitment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SPR (stack-to-pot ratio)
+        SPR (stack-to-pot ratio) &amp; commitment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploitability-nash-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploitability &amp; Nash distance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rake
       
     </span>
   </a>
@@ -1467,7 +1567,7 @@
 <p>MDF assumes bluffs have <strong>zero equity</strong> and ignores <strong>rake</strong> and <strong>blockers</strong>. In practice you defend based on your hands' actual equity and removal — MDF is the floor that stops <em>pure</em> bluffs from auto-profiting, and a starting point you deviate from when you have reads.</p>
 </div>
 <h2 id="bluff-to-value-ratio">Bluff-to-value ratio<a class="headerlink" href="#bluff-to-value-ratio" title="Permanent link">&para;</a></h2>
-<p>A polarizing bettor includes enough bluffs to make the caller's bluff-catchers <strong>indifferent</strong>. On the <strong>river</strong>, by size:</p>
+<p>A polarizing bettor includes enough bluffs to make the caller's bluff-catchers <strong>indifferent</strong>. Mechanically, the <strong>bluff share of the betting range = Alpha = bet/(pot+bet)</strong> — the same fold-equity threshold. On the <strong>river</strong>, by size:</p>
 <table>
 <thead>
 <tr>
@@ -1490,7 +1590,11 @@
 </tr>
 </tbody>
 </table>
-<p>Bigger bets → <em>more</em> bluffs allowed. On <strong>earlier streets you can bluff more</strong> because your bluffs still have equity (they can improve), so the ratio tilts further toward bluffs.</p>
+<p>Bigger bets → <em>more</em> bluffs allowed. On <strong>earlier streets you can bluff more</strong> because your "bluffs" still have equity/outs to improve (they're not pure bluffs), so the mix is more bluff-heavy on the flop/turn and <strong>tightens toward the river</strong> as equity crystallizes.</p>
+<div class="admonition note">
+<p class="admonition-title">These are the textbook ratios</p>
+<p>The 2:1 / 1:1 / 1:2 figures are the standard <em>consequence</em> of Alpha — the Alpha/MDF math is exact, but real solver river ratios <strong>deviate slightly</strong> due to card removal and range composition. Use them as anchors, not gospel.</p>
+</div>
 <h2 id="ev-equity-fold-equity">EV, equity, fold equity<a class="headerlink" href="#ev-equity-fold-equity" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>EV (Expected Value)</strong> — the probability-weighted average outcome; everything else is in service of making +EV decisions.</li>
@@ -1509,12 +1613,55 @@
 </ul>
 </li>
 </ul>
-<h2 id="spr-stack-to-pot-ratio">SPR (stack-to-pot ratio)<a class="headerlink" href="#spr-stack-to-pot-ratio" title="Permanent link">&para;</a></h2>
-<p><strong>SPR = effective stack ÷ pot</strong> at the start of a street.
-- <strong>Low SPR</strong> (e.g., 3-bet pots) → top-pair/overpair hands are happy to stack off.
-- <strong>High SPR</strong> (deep, limped/flatted pots) → you need much stronger hands to commit; implied odds and playability matter more.</p>
+<h2 id="spr-stack-to-pot-ratio-commitment">SPR (stack-to-pot ratio) &amp; commitment<a class="headerlink" href="#spr-stack-to-pot-ratio-commitment" title="Permanent link">&para;</a></h2>
+<p><strong>SPR = effective stack ÷ pot</strong> at the start of a street. The equity you need to profitably stack off <strong>rises with SPR</strong> as <code>risk/(risk+pot)</code>:</p>
+<table>
+<thead>
+<tr>
+<th>SPR</th>
+<th>Equity to stack off</th>
+<th>What can commit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>~33%</td>
+<td>almost any pair / draw</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>~40%</td>
+<td><strong>any top pair</strong> (+ most 2nd pairs, a few lower pairs)</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>~43%</td>
+<td>top pair, strong draws</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>higher</td>
+<td>top pair gets <strong>dicey</strong>; OESDs become <strong>pure folds</strong></td>
+</tr>
+<tr>
+<td><strong>16 (deep)</strong></td>
+<td>—</td>
+<td>even <strong>top pairs &amp; nut flush draws are only <em>indifferent</em></strong></td>
+</tr>
+</tbody>
+</table>
+<p>So <strong>3-bet pots (low SPR)</strong> play for stacks with one pair; <strong>deep/limped pots (high SPR)</strong> demand much stronger hands and reward implied odds + playability.</p>
+<h2 id="exploitability-nash-distance">Exploitability &amp; Nash distance<a class="headerlink" href="#exploitability-nash-distance" title="Permanent link">&para;</a></h2>
+<p><strong>Nash Distance (dEV)</strong> measures how far a strategy is from equilibrium = the most EV the best counter-strategy could win off it (0 = perfect equilibrium). At equilibrium, <strong>every mixed action has equal EV</strong> (the indifference condition).
+- Reported as a <strong>% of pot</strong> → convertible to bb/hand (e.g., 0.3% of a 5.5bb pot ≈ <strong>0.017 bb/hand</strong> exploitable).
+- <strong>Solvers converge to ~0.2–0.3% of pot</strong> — far more precise than any human. The <strong>EV-loss</strong> of one of your decisions is this same idea applied to a single action: how much you concede vs the best response. (It's exactly what the GTO Wizard trainer scores.)</p>
+<h2 id="rake">Rake<a class="headerlink" href="#rake" title="Permanent link">&para;</a></h2>
+<p><strong>Rake is paid by the player closing the action</strong>, which <strong>worsens the caller's pot odds</strong> (like virtually enlarging the bet).
+- Effect: the <strong>defender tightens</strong> (the BB calls less everywhere, shifting to folds and check-raises), while the <strong>aggressor can bluff <em>more</em></strong> — e.g. an NL100 BTN-vs-BB flop where BTN bets trash <strong>45% raked vs 36% unraked</strong>.
+- The <strong>rake cap</strong> limits this once pots grow large, so the distortion is <strong>biggest in small/marginal pots</strong> — which is why rake quietly <strong>tightens opening ranges</strong> and trims the profit of steals, light 3-bets, and thin pots.</p>
 <hr />
-<p><em>Sources: <a href="https://en.wikipedia.org/wiki/Pot_odds">Pot odds</a> · <a href="https://blog.gtowizard.com/mdf-alpha/">MDF &amp; Alpha</a> · <a href="https://upswingpoker.com/what-is-bluff-to-value-ratio/">Bluff-to-value</a> · <a href="https://blog.gtowizard.com/a-beginners-guide-to-poker-combinatorics/">Combinatorics</a> · <a href="https://www.thepokerbank.com/strategy/mathematics/hand-combinations/">Card removal</a></em></p>
+<p><em>Sources: <a href="https://en.wikipedia.org/wiki/Pot_odds">Pot odds</a> · <a href="https://blog.gtowizard.com/mdf-alpha/">MDF &amp; Alpha</a> · <a href="https://blog.gtowizard.com/a-beginners-guide-to-poker-combinatorics/">Combinatorics</a> · <a href="https://www.thepokerbank.com/strategy/mathematics/hand-combinations/">Card removal</a> · <a href="https://blog.gtowizard.com/stack-to-pot-ratio/">SPR</a> · <a href="https://blog.gtowizard.com/understanding-nash-distance/">Nash distance</a> · <a href="https://blog.gtowizard.com/customizable-raked-solutions-with-gto-wizard-ai/">Rake</a></em></p>
 
 
 
