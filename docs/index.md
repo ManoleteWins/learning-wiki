@@ -12,6 +12,7 @@ A practical, **evidence-based** guide to actually getting better at poker — bu
 ## How this wiki is organized
 
 - **[How Learning Works](learning-vs-performance.md)** — the science: the handful of principles that actually build durable skill (retrieval, spacing, interleaving, deliberate practice…). Read this first; it's *why* everything else works.
+- **[How to Study Poker](poker/how-to-study-poker.md)** — the complete pillar guide, if you want the whole method on one page.
 - **[Studying Poker](poker/toolkit.md)** — the application: how to use solvers, trainers, Anki, trackers, hand-reading and the mental game *the way the science says you should.*
 - **[Build Your Routine](poker/study-routine.md)** — put it together into a study system you actually follow.
 
