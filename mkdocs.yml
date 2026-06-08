@@ -1,0 +1,76 @@
+site_name: The Science of Poker Study
+site_description: How to actually get better at poker — evidence-based learning science applied to poker study.
+# site_url: https://YOUR-USERNAME.github.io/REPO-NAME/   # optional
+
+theme:
+  name: material
+  icon:
+    logo: material/cards-spade
+  favicon: assets/favicon.svg
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - How Learning Works:
+      - The Big Idea (Learning ≠ Performance): learning-vs-performance.md
+      - Retrieval Practice: retrieval-practice.md
+      - Spaced Practice: spaced-practice.md
+      - Interleaving: interleaving.md
+      - Cognitive Load & Expertise: cognitive-load.md
+      - Deliberate Practice: deliberate-practice.md
+      - Attention & Flow: attention-and-flow.md
+      - Feedback & Self-Awareness: feedback-and-metacognition.md
+      - Transfer & Sleep: transfer-and-sleep.md
+      - Principles → Practice: putting-it-together.md
+  - Studying Poker:
+      - The Study Toolkit: poker/toolkit.md
+      - Solver Study & Heuristics: poker/solver-study.md
+      - Drilling Spots: poker/drilling.md
+      - Anki for Poker: poker/anki-for-poker.md
+      - Database Review & Leaks: poker/database-review.md
+      - Hand Reading & Reads: poker/hand-reading.md
+      - Mental Game & Variance: poker/mental-game.md
+  - Glossary & Concepts:
+      - Glossary (all terms): poker/glossary.md
+      - Poker Math: poker/concept-math.md
+      - Ranges & Advantage: poker/concept-ranges.md
+      - Bet Sizing: poker/concept-bet-sizing.md
+      - C-Betting & Lines: poker/concept-cbetting.md
+      - Preflop & Blind Defense: poker/concept-preflop.md
+      - Multiway & Stack Depth: poker/concept-multiway.md
+  - Build Your Routine: poker/study-routine.md

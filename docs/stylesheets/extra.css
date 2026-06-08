@@ -1,0 +1,53 @@
+/* ─────────────  Poker-table branding  ───────────── */
+
+:root {
+  --md-primary-fg-color:        #0b6e4f;   /* felt green   */
+  --md-primary-fg-color--light: #11885f;
+  --md-primary-fg-color--dark:  #06513a;
+  --md-accent-fg-color:         #c8a24a;   /* casino gold  */
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0d7a57;
+  --md-primary-fg-color--light: #12986d;
+  --md-primary-fg-color--dark:  #084d38;
+  --md-accent-fg-color:         #d8b24e;
+  --md-default-bg-color:        #0d1411;   /* dark felt */
+}
+
+/* Gold rule under section headings (like a card-table edge) */
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: .25rem;
+}
+
+/* Gold spade flourish before every page title */
+.md-typeset h1::before {
+  content: "♠ ";
+  color: var(--md-accent-fg-color);
+}
+
+/* "In poker" callouts tinted like the felt */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: var(--md-primary-fg-color);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(11, 110, 79, 0.12);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Subtle gold on inline-code and the search accent */
+.md-typeset a {
+  text-decoration-color: var(--md-accent-fg-color);
+}
+
+/* Footer + header keep the felt; gold hover on nav tabs */
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}

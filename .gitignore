@@ -1,0 +1,29 @@
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# GitHub Actions workflow — kept local (token lacks `workflow` scope to push it).
+# Re-enable auto-deploy later by running: gh auth refresh -s workflow
+.github/
+
+# ---------------------------------------------------------------------------
+# Personal / private — keep OUT of the public wiki repo.
+# The published wiki is built ONLY from docs/, mkdocs.yml, requirements.txt.
+# Everything else here is personal scratch and must never be committed.
+# NOTE: keep comments on their OWN lines — an inline "#" becomes part of the
+# pattern and silently breaks the rule.
+# ---------------------------------------------------------------------------
+knowledge-base/
+MEMORY.md
+
+# All root-level HTML and TXT are personal saves / scratch
+/*.html
+/*.txt
+
+# ...except the one TXT the wiki genuinely needs:
+!requirements.txt
