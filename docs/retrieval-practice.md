@@ -1,3 +1,7 @@
+---
+description: Retrieval practice (self-testing) is the most effective way to learn — why testing beats re-reading, and how to apply it to poker study with closed-book solver drills.
+---
+
 # Retrieval Practice (Test Yourself)
 
 The single most effective study technique there is. If you change only one habit, make it this one.

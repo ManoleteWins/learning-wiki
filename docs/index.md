@@ -1,3 +1,7 @@
+---
+description: A free, evidence-based guide to studying poker — learning science applied to NLHE cash, with a full glossary and concept reference. Brought to you by Dead Read.
+---
+
 # The Science of Poker Study
 
 A practical, **evidence-based** guide to actually getting better at poker — built on what cognitive science says about how skill is really learned, then applied directly to how you study the game.
@@ -26,5 +30,12 @@ A practical, **evidence-based** guide to actually getting better at poker — bu
 !!! tip "New here?"
     Read **[The Big Idea](learning-vs-performance.md)** and **[Retrieval Practice](retrieval-practice.md)** first (5 min), then jump to **[Drilling Spots](poker/drilling.md)** to see it applied. In a hurry? Go straight to **[Build Your Routine](poker/study-routine.md)**.
 
+## Want coaching to go with the theory?
+
+This wiki is the free, public study resource from **Dead Read** — our coaching-for-profit program turns this theory into a structured, coached improvement plan.
+
+[Join Dead Read →](https://joindeadread.com){ .md-button .md-button--primary }
+[Browse the study routine](poker/study-routine.md){ .md-button }
+
 ---
-*Every principle here is grounded in peer-reviewed research and applied to poker study. Pages link to their sources; where the science is debated, the page says so.*
+*Every principle here is grounded in peer-reviewed research and applied to poker study. Pages link to their sources; where the science is debated, the page says so. — A free resource by [Dead Read](https://joindeadread.com).*

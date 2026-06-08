@@ -1,3 +1,7 @@
+---
+description: A complete glossary of No-Limit Hold'em cash terms — positions, bet types, board texture, ranges, GTO math, and more, each defined concisely with links to deeper concept pages.
+---
+
 # Glossary
 
 A quick-reference of NLHE cash terms. For the concepts that deserve real depth, follow the links to the **concept pages** ([Poker Math](concept-math.md), [Ranges & Advantage](concept-ranges.md), [Bet Sizing](concept-bet-sizing.md), [C-Betting & Lines](concept-cbetting.md)).

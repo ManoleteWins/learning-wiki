@@ -1,3 +1,7 @@
+---
+description: The essential poker math, explained simply — pot odds, MDF and Alpha, bluff-to-value ratios, combinatorics and blockers, SPR commitment, Nash distance, and rake.
+---
+
 # Poker Math
 
 The handful of formulas that actually drive decisions. All of these are verified identities — the arithmetic checks out.
