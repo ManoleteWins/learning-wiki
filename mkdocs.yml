@@ -69,6 +69,7 @@ nav:
       - Mental Game & Variance: poker/mental-game.md
   - Glossary & Concepts:
       - Glossary (all terms): poker/glossary.md
+      - GTO vs Exploitative: poker/gto-vs-exploitative.md
       - Poker Math: poker/concept-math.md
       - Ranges & Advantage: poker/concept-ranges.md
       - Bet Sizing: poker/concept-bet-sizing.md
