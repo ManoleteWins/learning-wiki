@@ -11,28 +11,28 @@
       
       
       
-        <link rel="prev" href="../spaced-practice/">
+        <link rel="prev" href="../anki-for-poker/">
       
       
-        <link rel="next" href="../cognitive-load/">
+        <link rel="next" href="../hand-reading/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Interleaving - The Science of Poker Study</title>
+        <title>Database Review & Leaks - The Science of Poker Study</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interleaving" class="md-skip">
+        <a href="#database-review-leak-finding" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="The Science of Poker Study" class="md-header__button md-logo" aria-label="The Science of Poker Study" data-md-component="logo">
+    <a href="../.." title="The Science of Poker Study" class="md-header__button md-logo" aria-label="The Science of Poker Study" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interleaving
+              Database Review & Leaks
             
           </span>
         </div>
@@ -211,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -228,13 +228,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../learning-vs-performance/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../learning-vs-performance/" class="md-tabs__link">
           
   
   
@@ -250,11 +248,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../poker/toolkit/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../toolkit/" class="md-tabs__link">
           
   
   
@@ -272,7 +272,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../poker/study-routine/" class="md-tabs__link">
+      <a href="../study-routine/" class="md-tabs__link">
         
   
   
@@ -307,7 +307,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="The Science of Poker Study" class="md-nav__button md-logo" aria-label="The Science of Poker Study" data-md-component="logo">
+    <a href="../.." title="The Science of Poker Study" class="md-nav__button md-logo" aria-label="The Science of Poker Study" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -325,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -341,6 +341,345 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How Learning Works
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    How Learning Works
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-vs-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Big Idea (Learning ≠ Performance)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retrieval-practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrieval Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spaced-practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spaced Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interleaving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interleaving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cognitive-load/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cognitive Load & Expertise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deliberate-practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deliberate Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../attention-and-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attention & Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback-and-metacognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback & Self-Awareness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../transfer-and-sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transfer & Sleep
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../putting-it-together/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principles → Practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -370,17 +709,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    How Learning Works
+    Studying Poker
   
 
     
@@ -391,12 +730,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    How Learning Works
+    Studying Poker
   
 
           </label>
@@ -409,14 +748,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../learning-vs-performance/" class="md-nav__link">
+      <a href="../toolkit/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    The Big Idea (Learning ≠ Performance)
+    The Study Toolkit
   
 
     
@@ -437,14 +776,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../retrieval-practice/" class="md-nav__link">
+      <a href="../solver-study/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Retrieval Practice
+    Solver Study & Heuristics
   
 
     
@@ -465,14 +804,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../spaced-practice/" class="md-nav__link">
+      <a href="../drilling/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Spaced Practice
+    Drilling Spots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anki-for-poker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anki for Poker
   
 
     
@@ -509,7 +876,7 @@
   <span class="md-ellipsis">
     
   
-    Interleaving
+    Database Review & Leaks
   
 
     
@@ -527,7 +894,7 @@
   <span class="md-ellipsis">
     
   
-    Interleaving
+    Database Review & Leaks
   
 
     
@@ -553,10 +920,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-is" class="md-nav__link">
+  <a href="#find-leaks-by-comparing-to-winners-not-the-pool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it is
+        Find leaks by comparing to winners, not the pool
       
     </span>
   </a>
@@ -564,10 +931,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-it-works" class="md-nav__link">
+  <a href="#stats-alone-lie-filter-to-the-actual-hands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why it works
+        Stats alone lie — filter to the actual hands
       
     </span>
   </a>
@@ -575,10 +942,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#sample-size-trust-opportunities-not-raw-hands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to use it
+        Sample size: trust opportunities, not raw hands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#population-reads-no-solver-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Population reads (no solver needed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-variance-reality-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The variance reality check
       
     </span>
   </a>
@@ -612,374 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cognitive-load/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cognitive Load & Expertise
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../deliberate-practice/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Deliberate Practice
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../attention-and-flow/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Attention & Flow
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../feedback-and-metacognition/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Feedback & Self-Awareness
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../transfer-and-sleep/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Transfer & Sleep
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../putting-it-together/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Principles → Practice
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Studying Poker
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Studying Poker
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/toolkit/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    The Study Toolkit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/solver-study/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Solver Study & Heuristics
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/drilling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Drilling Spots
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/anki-for-poker/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Anki for Poker
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/database-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Database Review & Leaks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poker/hand-reading/" class="md-nav__link">
+      <a href="../hand-reading/" class="md-nav__link">
         
   
   
@@ -1007,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../poker/mental-game/" class="md-nav__link">
+      <a href="../mental-game/" class="md-nav__link">
         
   
   
@@ -1042,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../poker/study-routine/" class="md-nav__link">
+      <a href="../study-routine/" class="md-nav__link">
         
   
   
@@ -1089,10 +1111,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-is" class="md-nav__link">
+  <a href="#find-leaks-by-comparing-to-winners-not-the-pool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it is
+        Find leaks by comparing to winners, not the pool
       
     </span>
   </a>
@@ -1100,10 +1122,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-it-works" class="md-nav__link">
+  <a href="#stats-alone-lie-filter-to-the-actual-hands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why it works
+        Stats alone lie — filter to the actual hands
       
     </span>
   </a>
@@ -1111,10 +1133,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#sample-size-trust-opportunities-not-raw-hands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to use it
+        Sample size: trust opportunities, not raw hands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#population-reads-no-solver-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Population reads (no solver needed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-variance-reality-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The variance reality check
       
     </span>
   </a>
@@ -1149,38 +1193,53 @@
 
 
 
-<h1 id="interleaving">Interleaving<a class="headerlink" href="#interleaving" title="Permanent link">&para;</a></h1>
-<p>Mixing different topics or problem types in one session, instead of drilling one at a time.</p>
-<h2 id="what-it-is">What it is<a class="headerlink" href="#what-it-is" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Blocking:</strong> practice A-A-A-A, then B-B-B-B, then C-C-C-C.</li>
-<li><strong>Interleaving:</strong> practice A-C-B-A-B-C — shuffled.</li>
-</ul>
-<h2 id="why-it-works">Why it works<a class="headerlink" href="#why-it-works" title="Permanent link">&para;</a></h2>
-<p>Interleaving feels worse and produces worse performance <em>during</em> practice — but markedly better retention and <strong>transfer to new problems</strong> later. The classic study (Rohrer &amp; Taylor): students who interleaved math problem types scored <strong>63%</strong> on a delayed test vs <strong>20%</strong> for blocked practice — even though blocked practice looked better during training.</p>
-<p>Why? Blocking lets you autopilot ("they're all type A, so apply the type-A method"). Interleaving forces you to first <strong>figure out <em>which kind</em> of problem you're facing</strong> — the exact discrimination skill you need in the real world, where problems don't come pre-labeled.</p>
-<div class="admonition note">
-<p class="admonition-title">Block first, then interleave</p>
-<p>There's a sequence. When a topic is <strong>brand new</strong>, a little blocked practice helps you build the basic pattern. Once you've got the basics, <strong>switch to interleaving</strong> to make it durable and flexible. Acquire blocked → retain interleaved.</p>
+<h1 id="database-review-leak-finding">Database Review &amp; Leak-Finding<a class="headerlink" href="#database-review-leak-finding" title="Permanent link">&para;</a></h1>
+<p>Your tracker tells you <strong>what to study in the first place.</strong> Studying random spots is guessing; studying <em>your actual leaks</em> is <a href="../../deliberate-practice/">deliberate practice</a>. This is how you find them — and how to avoid being fooled by small samples.</p>
+<h2 id="find-leaks-by-comparing-to-winners-not-the-pool">Find leaks by comparing to <em>winners</em>, not the pool<a class="headerlink" href="#find-leaks-by-comparing-to-winners-not-the-pool" title="Permanent link">&para;</a></h2>
+<p>Pull your core stats (VPIP, PFR, 3-bet, fold-to-3bet, c-bet flop/turn, fold-to-c-bet, WWSF, WTSD, W$SD, aggression) and compare them against <strong>the biggest winners at your stake</strong> — <strong>not</strong> the pool average.</p>
+<blockquote>
+<p>The average player is a <em>losing</em> player, so matching pool averages is worthless. Match (and understand) what the winners do.</p>
+</blockquote>
+<h2 id="stats-alone-lie-filter-to-the-actual-hands">Stats alone lie — filter to the actual hands<a class="headerlink" href="#stats-alone-lie-filter-to-the-actual-hands" title="Permanent link">&para;</a></h2>
+<p>A "60% turn-barrel" number means nothing without context. Use your tracker's filters (PokerTracker's <strong>Actions &amp; Opportunities</strong>, HM3's filter editor) to pull the <strong>specific hands</strong> behind a suspicious stat — which boards, which opponents, which lines. The stat flags a <em>maybe</em>; the hands tell the story.</p>
+<h2 id="sample-size-trust-opportunities-not-raw-hands">Sample size: trust opportunities, not raw hands<a class="headerlink" href="#sample-size-trust-opportunities-not-raw-hands" title="Permanent link">&para;</a></h2>
+<p>A stat is only as reliable as the number of times its <em>situation</em> came up:</p>
+<table>
+<thead>
+<tr>
+<th>Reliability</th>
+<th>Opportunities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Working minimum</td>
+<td>~10</td>
+</tr>
+<tr>
+<td>Solid</td>
+<td>10–30</td>
+</tr>
+<tr>
+<td>Trustworthy</td>
+<td><strong>30+</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Preflop frequency stats</strong> (VPIP, PFR, RFI) stabilize fast. <strong>Turn/river stats</strong> need far more — fold-to-turn-cbet ~300+ hands, river stats ~1,000+. A flashy read on a tiny sample is noise.</p>
+<h2 id="population-reads-no-solver-needed">Population reads (no solver needed)<a class="headerlink" href="#population-reads-no-solver-needed" title="Permanent link">&para;</a></h2>
+<p>Your database <em>is</em> a population model. Build a report across <strong>all players</strong> in your DB (grouped by stake) to get pool-wide tendencies — how often the field folds to 3-bets, calls steals, etc. These <strong>population reads</strong> are how you exploit unknown opponents, and they feed <a href="../solver-study/">node-locking</a> and <a href="../hand-reading/">hand reading</a>.</p>
+<h2 id="the-variance-reality-check">The variance reality check<a class="headerlink" href="#the-variance-reality-check" title="Permanent link">&para;</a></h2>
+<p>You cannot read your <em>results</em> over short samples — variance is enormous. Standard deviation in 6-max NLHE is ~<strong>90–100 bb/100</strong>, which means:</p>
+<div class="admonition warning">
+<p class="admonition-title">Even 100,000 hands isn't certain</p>
+<p>At 100k hands, your true winrate is pinned only to about <strong>±5.6 bb/100</strong>. A measured 5 bb/100 could really be anywhere from ~0 to ~11. So <strong>never change your strategy off a downswing</strong> within a normal sample — judge your <em>decisions</em>, not your graph. → <a href="../mental-game/">Mental Game &amp; Variance</a></p>
 </div>
-<h2 id="how-to-use-it">How to use it<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Don't do 50 of the same problem type in a row. After you've grasped it, <strong>mix it with related types.</strong></li>
-<li>Practice <strong>discrimination</strong>: deliberately put similar-but-different cases side by side so you learn to tell them apart.</li>
-<li>Expect it to feel harder and messier than blocking. That's the desirable difficulty doing its job.</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Try this</p>
-<p>In your next practice session, after warming up on a new pattern, shuffle it together with 2–3 related ones you already know. Force yourself to identify the situation <em>before</em> choosing the response.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">In poker</p>
-<p>Drill <strong>random spots</strong> (GTO Wizard Full Hand mode) across formations rather than grinding one node 200× — random spots force you to first identify <em>which</em> situation you're in. Block a new spot to learn it, then interleave. → <a href="../poker/drilling/">Drilling Spots</a></p>
-</div>
+<p><em>(Compute your own confidence intervals with a variance calculator: <code>95% CI = winrate ± 1.96 × SD ÷ √(hands/100)</code>.)</em></p>
 <h2 id="key-takeaway">Key takeaway<a class="headerlink" href="#key-takeaway" title="Permanent link">&para;</a></h2>
-<p><strong>Mix it up.</strong> Blocked practice builds confidence; interleaved practice builds the skill you can actually use when situations come at you in random order.</p>
+<p><strong>Diagnose before you study.</strong> Compare to winners, filter to real hands, trust 30+ opportunities (not raw hands), mine population reads — and never let a small-sample graph dictate strategy.</p>
 <hr />
-<p><em>Sources: <a href="https://www.researchgate.net/publication/284097727_Making_things_hard_on_yourself_but_in_a_good_way_Creating_desirable_difficulties_to_enhance_learning">Rohrer &amp; Taylor, via Bjork &amp; Bjork</a> · <a href="https://sanlab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/RBjork_Dunlosky_Kornell_2012.pdf">Kornell &amp; Bjork (2008)</a></em></p>
+<p><em>Sources: <a href="https://www.blackrain79.com/2017/11/poker-hud-stat-sample-size.html">HUD stat sample sizes</a> · <a href="https://www.blackrain79.com/2014/03/how-to-conduct-poker-database-review.html">database review method</a> · <a href="https://www.primedope.com/poker-variance-calculator/">variance</a></em></p>
 
 
 
@@ -1216,7 +1275,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../spaced-practice/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Spaced Practice">
+          <a href="../anki-for-poker/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Anki for Poker">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1226,20 +1285,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Spaced Practice
+                Anki for Poker
               </div>
             </div>
           </a>
         
         
           
-          <a href="../cognitive-load/" class="md-footer__link md-footer__link--next" aria-label="Next: Cognitive Load &amp; Expertise">
+          <a href="../hand-reading/" class="md-footer__link md-footer__link--next" aria-label="Next: Hand Reading &amp; Reads">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Cognitive Load & Expertise
+                Hand Reading & Reads
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1276,10 +1335,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
